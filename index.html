@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+    <title>Practice5</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Country code identifier</h1>
+        <div class="row justify-content-center">
+            <div class="col-lg-5">
+                <form onsubmit="return false;">
+                    <div class="mb-3">
+                        <label for="countries" class="form-label">Enter a country code</label>
+                        <input type="text" id="countries" class="form-control">
+                    </div>
+                    
+                    <!-- Two side-by-side buttons using a Bootstrap row -->
+                    <div class="row g-2">
+                        <div class="col-6">
+                            <button type="button" class="btn btn-danger w-100" py-click="check_country">Check</button>
+                        </div>
+                        <div class="col-6">
+                            <button type="button" class="btn btn-secondary w-100" py-click="country_fidelity">Fidelity</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-4">
+            <div class="col-lg-5 text-center fs-4 fw-bold" id="output1"></div>
+        </div>
+    </div>
+
+    <script type="py" src="main.py"></script>
+</body>
+</html>
